@@ -32,6 +32,14 @@ const Wrapper = styled.div`
   height: 40px;
   padding-left: 32px;
   padding-right: 32px;
+
+  @media ${({ theme: { queries } }) => queries.tabletAndSmaller} {
+    & > * {
+      display: none;
+    }
+
+    height: 4px;
+  }
 `;
 
 const MarketingMessage = styled.span`
